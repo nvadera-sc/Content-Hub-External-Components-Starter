@@ -4,6 +4,8 @@ This is a starter project intended to help in the development of external compon
 
 The project is also configured to allow use of tailwind in css modules.
 
+The original version of this repository has now been [archived](https://github.com/nvadera-sc/Content-Hub-External-Components-Starter-v1).
+
 ## Develop
 
 The `src` directory contains the following directories:
