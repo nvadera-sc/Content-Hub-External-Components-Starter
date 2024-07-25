@@ -1,0 +1,13 @@
+@import url("../../global.css");
+
+.icon {
+    @apply inline-block leading-none min-h-4;
+}
+
+.icon svg {
+    @apply w-full aspect-square sticky z-10 align-bottom select-none fill-current;
+}
+
+.icon path[stroke] {
+    @apply stroke-current fill-transparent
+}

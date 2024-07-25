@@ -1,0 +1,5 @@
+@import url("../../global.css");
+
+.input {
+    @apply rounded-md border border-slate-600 px-2 py-1 text-slate-600 shadow-sm transition-colors;
+}

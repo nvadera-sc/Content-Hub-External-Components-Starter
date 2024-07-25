@@ -1,0 +1,13 @@
+@import url("../../global.css");
+
+.textarea {
+    @apply rounded border border-black/10 px-2 py-1 text-black/95 transition-colors;
+}
+
+.textarea:hover {
+    @apply border-black/30;
+}
+
+.textarea:focus {
+    @apply border-blue-600 outline-none
+}

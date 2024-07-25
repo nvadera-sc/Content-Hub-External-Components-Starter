@@ -1,0 +1,46 @@
+@import url("../../global.css");
+
+.button {
+    @apply cursor-pointer items-center transition-colors text-center rounded-full p-1 text-sm;
+}
+
+.button:disabled,
+.button:global(.disabled) {
+    @apply opacity-50 pointer-events-none;
+}
+
+.primary {
+    @apply px-3 py-1 bg-indigo-600 text-white;
+}
+
+.secondary {
+    @apply border border-slate-600 text-slate-600;
+}
+
+.tertiary {
+    @apply px-3 py-1 text-indigo-600;
+}
+
+.tertiary:hover {
+    @apply bg-black/5;
+}
+
+.ghost {
+    @apply px-3 py-1;
+}
+
+.ghost:hover {
+    @apply bg-black/5;
+}
+
+.icon {
+    @apply size-9 text-black/55;
+}
+
+.icon:hover {
+    @apply bg-black/5
+}
+
+.icon i {
+    @apply size-6;
+}

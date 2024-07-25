@@ -1,0 +1,10 @@
+@import url("../../global.css");
+
+.loading {
+    @apply aspect-square w-8 fill-slate-200
+}
+
+.spinner {
+    @apply animate-spin fill-slate-600;
+    transform-origin: center;
+}
