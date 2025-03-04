@@ -36,7 +36,7 @@ export type IContext<T = any> = {
   config: T;
   entity?: {
     permissions: Record<string, Optional<boolean>>;
-    properties: Record<string, Record<CultureInfo, unknown>>;
+    properties: Record<string, any>;
     relations: Record<string, Array<number>>;
     renditions: Record<string, Array<string>>;
     systemProperties: {
@@ -76,6 +76,7 @@ export type IContext<T = any> = {
     nestingLevel?: number;
     setCulture?: (culture: CultureInfo) => void;
     setEntityId?: (entityId: number) => void;
+    setModalOperations?: (operations: ModalOperationConfig[]) => void;
   };
   theme: any;
   user: {
@@ -88,4 +89,16 @@ export type IContext<T = any> = {
 
 export type IModuleProps<T = any> = IContext<T> & {
   createClient: () => IExtendedContentHubClient;
+};
+
+export type ModalOperationConfig = {
+  name: string;
+  id: string;
+  label: string;
+  displayType?: "link" | "default" | "primary" | "secondary" | "none";
+  className?: string;
+  onValidate?: () => boolean | Promise<boolean>;
+  onClick?: (event?: unknown) => void | Promise<void>;
+  onMouseOver?: (event?: unknown) => void | Promise<void>;
+  onContextMenu?: (event?: unknown) => void | Promise<void>;
 };
